@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Model for API response
 struct PhotosResult: Decodable {
     let stat: String?
     let photos: Photos?

@@ -8,7 +8,7 @@
 
 import UIKit
 
-// protocol to send the selected history search term to corresponding view controller
+/// protocol to send the selected history search term to corresponding view controller
 protocol HistoryViewControllerDelegate: AnyObject {
     func selectedSearchTerm(text: String)
 }
@@ -32,7 +32,7 @@ class HistoryViewController: UIViewController {
     
 }
 
-// MARK: - TableView data source and  delegate
+// MARK: - TableView data source and delegate
 
 extension HistoryViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

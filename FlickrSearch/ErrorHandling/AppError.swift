@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Custom error for API response
 enum AppError: Error {
     case stat
 }

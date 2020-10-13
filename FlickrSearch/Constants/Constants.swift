@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// API constants
 struct Constants {
     
     private init() { }

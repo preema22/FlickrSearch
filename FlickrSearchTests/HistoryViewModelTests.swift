@@ -9,6 +9,7 @@
 import XCTest
 @testable import FlickrSearch
 
+/// Tests for HistoryViewModel
 class HistoryViewModelTests: XCTestCase {
     var sut: HistoryViewModel!
     var mainSut: PhotosViewModel!

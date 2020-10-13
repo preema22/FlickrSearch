@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// ViewModel for PhotoCollectionViewCell
 struct PhotoViewModel {
     let photoImage: Dynamic<String>
     

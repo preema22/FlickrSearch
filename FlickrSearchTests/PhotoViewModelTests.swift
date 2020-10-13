@@ -9,6 +9,7 @@
 import XCTest
 @testable import FlickrSearch
 
+/// Tests for PhotoViewModel
 class PhotoViewModelTests: XCTestCase {
 
     var sut: PhotoViewModel!

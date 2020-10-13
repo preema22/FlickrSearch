@@ -39,7 +39,7 @@ class PhotosViewController: UIViewController {
         viewModel = PhotosViewModel()
     }
     
-    // Set up search bar
+    /// Set up search bar
     fileprivate func setUpSearchBar() {
         definesPresentationContext = true
         navigationItem.searchController = searchController
@@ -52,7 +52,7 @@ class PhotosViewController: UIViewController {
         performSegue(withIdentifier: "HistorySegue", sender: self)
     }
     
-    // Method that resets scroll to the top of the collection view
+    /// Method that resets scroll to the top of the collection view
     fileprivate func scrollCollectionViewToTop() {
         if photosCollectionView.numberOfItems(inSection: 0) != 0 {
             photosCollectionView.scrollToItem(at: .init(row: 0, section: 0), at: .top, animated: true)

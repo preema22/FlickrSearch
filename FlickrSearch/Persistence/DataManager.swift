@@ -12,6 +12,8 @@ class DataManager {
     
     private lazy var workingContext = {PersistenceService.shared.context}()
     
+    /// Helper to create Core Data entry
+    /// - Parameter historyString: Search term entered by the user
     func save(historyString: String) {
         HistoryEntityHandler().create(with: historyString, context: workingContext)
         PersistenceService.shared.saveContext()

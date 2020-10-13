@@ -11,10 +11,16 @@ import CoreData
 
 class HistoryEntityHandler: NSObject {
     
+    /// Method to fetch search term history from Core Data
+    /// - Returns: Returns History (Entity) fetch result
     func fetchRequest() -> NSFetchRequest<NSFetchRequestResult>? {
         return History.fetchRequest()
     }
     
+    /// Method to check existence and eliminate duplicate entry search term in History entity, Core Data
+    /// - Parameters:
+    ///   - text: search term to be saved
+    ///   - context: NSManagedObjectContext
     func create(with text: String, context: NSManagedObjectContext) {
         var userHistory: History!
         if let history = self.historyWithSearchText(searchText: text, context: context) {
@@ -26,6 +32,11 @@ class HistoryEntityHandler: NSObject {
         userHistory.searchText = text
     }
     
+    /// Method to fetch existing entry of search term as History Entity, Core Data
+    /// - Parameters:
+    ///   - searchText: Search term entered by the user
+    ///   - context: NSManagedObjectContext
+    /// - Returns: Optional History entity
     func historyWithSearchText(searchText: String, context: NSManagedObjectContext) -> History? {
         let fetchRequest = self.fetchRequest()
         fetchRequest?.predicate = NSPredicate(format: "searchText = %@", searchText)

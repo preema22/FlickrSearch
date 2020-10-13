@@ -9,6 +9,7 @@
 import UIKit
 import SDWebImage
 
+/// CollectionViewCell for Photo display
 class PhotoCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var photoImageView: UIImageView!

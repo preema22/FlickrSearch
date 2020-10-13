@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Model for API response - represents a single photo entry
 struct Photo: Decodable {
     let id: String
     let secret: String

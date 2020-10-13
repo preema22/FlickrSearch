@@ -38,6 +38,11 @@ class PersistenceService {
         }
     }
     
+    // MARK: - Core Data Fetch
+    
+    /// Generic fetch method to fetch entries from Core Data
+    /// - Parameter objectType: Specic object type to be used in place of generic
+    /// - Returns: List of objects
     func fetch<T: NSManagedObject>(_ objectType: T.Type) -> [T] {
         
         let entityName = String(describing: objectType)
