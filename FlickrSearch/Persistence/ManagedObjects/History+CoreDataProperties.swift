@@ -10,7 +10,6 @@
 import Foundation
 import CoreData
 
-
 extension History {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<History> {

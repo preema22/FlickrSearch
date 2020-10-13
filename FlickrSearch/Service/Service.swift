@@ -17,7 +17,7 @@ class Service {
         guard let url = URL(string: urlString) else {
             return
         }
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        URLSession.shared.dataTask(with: url) { (data, _, error) in
             if let error = error {
                 completion(.failure(error))
             }
@@ -37,6 +37,5 @@ class Service {
             }
         }.resume()
     }
-    
     
 }

@@ -26,13 +26,13 @@ class HistoryEntityHandler: NSObject {
         userHistory.searchText = text
     }
     
-    func historyWithSearchText(searchText: String, context: NSManagedObjectContext) -> History?  {
+    func historyWithSearchText(searchText: String, context: NSManagedObjectContext) -> History? {
         let fetchRequest = self.fetchRequest()
         fetchRequest?.predicate = NSPredicate(format: "searchText = %@", searchText)
         
         do {
             let fetchedObject = try context.fetch(fetchRequest!)
-            if let fetchedObject = fetchedObject  as? [History], fetchedObject.count > 0 {
+            if let fetchedObject = fetchedObject  as? [History], !fetchedObject.isEmpty {
                 return fetchedObject.first
             }
             return nil

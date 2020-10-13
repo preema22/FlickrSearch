@@ -10,7 +10,6 @@ import XCTest
 @testable import FlickrSearch
 
 class HistoryViewModelTests: XCTestCase {
-    
     var sut: HistoryViewModel!
     var mainSut: PhotosViewModel!
 
@@ -28,5 +27,4 @@ class HistoryViewModelTests: XCTestCase {
         mainSut.seachPhotos(searchTerm: "kittens")
         XCTAssertNotNil(sut.numberOfSearchTerms)
     }
-    
 }

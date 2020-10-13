@@ -19,7 +19,7 @@ struct HistoryViewModel {
     
     init() {
         let users = PersistenceService.shared.fetch(History.self)
-        searchHistory = users.compactMap{ $0 }
+        searchHistory = users.compactMap { $0 }
     }
     
     // Helper for cell

@@ -10,7 +10,7 @@ import UIKit
 
 // protocol to send the selected history search term to corresponding view controller
 protocol HistoryViewControllerDelegate: AnyObject {
-    func selectedSearchTerm(text : String)
+    func selectedSearchTerm(text: String)
 }
 
 class HistoryViewController: UIViewController {

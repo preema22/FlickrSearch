@@ -78,7 +78,7 @@ extension PhotosViewModel {
 // MARK: - Search term persist
 
 extension PhotosViewModel {
-    private func saveSearchTerm(text: String){
+    private func saveSearchTerm(text: String) {
         let dataManager = DataManager()
         dataManager.save(historyString: text)
     }
