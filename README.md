@@ -61,9 +61,9 @@ Data entity handler. Helps _DataManager_  fetch existing entires and eliminate d
 Tests for _PhotosViewModel_ validations
 
 ### PhotoViewModelTests
-Tests for _PhotosViewModel_ validations
+Tests for _PhotoViewModel_ validations
 
 ### HistoryViewModelTests
-Tests for _PhotosViewModel_ validations
+Tests for _HistoryViewModel_ validations
 
 
