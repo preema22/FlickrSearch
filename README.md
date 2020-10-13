@@ -2,7 +2,8 @@
 Created by Preema DSouza
 
 This project is implemented using Xcode 11.7 and Swift 5 and follow MVVM design pattern.
-This project is about fetching and presenting photos based on user input search text. It uses the pod SdWebImage to assist download of images. The project also provides a history of past search terms by using Core Data
+This project is about fetching and presenting photos based on user input search text. It uses the pod SdWebImage to assist download of images. The project also provides a history of past search terms by using Core Data.
+Please open FlickrSearch.xcworkspace as opposed to FlickrSearch.xcodeproj due to existence of pod.
 
 ## View Controllers
 There are two view controllers, **PhotosViewController** and **HistoryViewController**
